@@ -1,0 +1,14 @@
+{
+  "name": "ngrating",
+  "version": "1.0.0",
+  "description": "An Angular directive for the implementing rating system in Angular.",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Param Singh",
+  "license": "ISC"
+}

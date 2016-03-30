@@ -1,0 +1,11 @@
+body{
+    background: #161712 url('https://unsplash.it/g/1280/700/?random') no-repeat;
+    background-size: cover;
+    color : #fff;
+    font-family: "helvetica neue";
+    font-size: 22px;
+}
+.main{
+    display: inline-block;
+    /*margin: 100px auto;*/
+}
