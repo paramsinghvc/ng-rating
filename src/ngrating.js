@@ -8,7 +8,7 @@ angular.module('ngRating', [])
 					weight: '=',
 					options: '='
 				},
-				template: '<div class="ngRating ngRatingHolder"><ul></ul><div class="infoCallout" ng-show="calloutText">{{calloutText}}</div></div>',
+				template: '<div class="ngRating ngRatingHolder"><ul></ul><div class="infoCallout" ng-if="calloutText">{{calloutText}}</div></div>',
 				compile: function($el, $attrs) {
 					return function($scope, $el, $attrs) {
 						$scope.weight = $scope.weight || 0;
@@ -39,9 +39,9 @@ angular.module('ngRating', [])
 								if ($scope.options.slabs) {
 									$scope.$apply(function() {
 										$scope.calloutText = $scope.options.slabs[idx - 1];
+										$el[0].querySelector('.infoCallout').style.left = e.target.offsetLeft + 'px';
 									})
 								}
-
 							})
 
 							$ul.on('click', function(e) {
